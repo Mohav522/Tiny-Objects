@@ -1,15 +1,42 @@
 /* These styles are just to make it easier to see the blocks, initially. */
 
-body { padding: 2em; }
 
-a { color: blue; }
-em { font-style: italic; }
-strong { font-weight: bold; }
+body {
+	box-sizing: border-box;
+	margin: auto;
+	padding: auto;
+	width: 90%;
 
-body,
-section,
-ul,
-figure {
-	display: grid;
-	gap: 1em;
+	font-family: 'gothamlight' ,serif;
+
+}
+@font-face {
+    font-family: 'gothamlight';
+    src: url('../assets/gotham-light-webfont.woff2') format('woff2'),
+         url('../assets/gotham-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.channel-title
+{
+	font-size: 36px;
+	margin-bottom: 20px;
+
+}
+
+.image-block {
+	display:grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	grid-gap: 1em;
+	justify-content: center;
+	align-items: center;
+}
+
+img{
+	display: block;
+	width: 100%;
+	padding: 10px;
+	object-fit: cover;
+    aspect-ratio: 1/1;
+
 }
